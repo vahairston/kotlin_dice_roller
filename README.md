@@ -1,2 +1,2 @@
-# kotlin_dice_roller
+# Kotlin Dice Roller
 A simple app to practice kotlin
