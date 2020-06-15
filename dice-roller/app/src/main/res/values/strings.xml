@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Dice Roller</string>
+
+    <!-- Different Modes -->
+    <string name="stats">Stats</string>
+    <string name="advDis">Advantage/Disadvantage</string>
+    <string name="weapons">Weapons</string>
+
+    <!--Stats-->
+    <string name="strength">Strength</string>
+    <string name="dexterity">Dexerity</string>
+    <string name="constitution">Constitution</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="wisdom">Wisdom</string>
+    <string name="charisma">Charisma</string>
+
+<!--    <string name="strength">Str</string>
+    <string name="dexterity">Dex</string>
+    <string name="constitution">Con</string>
+    <string name="intelligence">Int</string>
+    <string name="wisdom">Wis</string>
+    <string name="charisma">Cha</string>-->
+
+
+    <!-- Adv/Div-->
+    <string name="advantage">Advantage</string>
+    <string name="disadvantage">Disadvantage</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

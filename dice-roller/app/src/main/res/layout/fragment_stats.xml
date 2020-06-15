@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatsFragment">
+
+    <!--    Strength -->
+    <TextView
+        android:id="@+id/strengthScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/strengthModifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/strengthScore" />
+
+    <TextView
+        android:id="@+id/strengthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/strength"
+        app:layout_constraintBottom_toBottomOf="@id/strengthModifier"
+        app:layout_constraintStart_toEndOf="@id/strengthScore"
+        app:layout_constraintTop_toTopOf="@id/strengthScore" />
+
+    <!-- Dexterity -->
+    <TextView
+        android:id="@+id/dexterityScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/strengthModifier" />
+
+    <TextView
+        android:id="@+id/dexterityModifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dexterityScore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/dexterity"
+        app:layout_constraintBottom_toBottomOf="@id/dexterityModifier"
+        app:layout_constraintStart_toEndOf="@id/dexterityScore"
+        app:layout_constraintTop_toTopOf="@id/dexterityScore" />
+
+    <!--    Constitution-->
+    <TextView
+        android:id="@+id/constitutionScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dexterityModifier" />
+
+    <TextView
+        android:id="@+id/constitutionModifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constitutionScore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/constitution"
+        app:layout_constraintBottom_toBottomOf="@id/constitutionModifier"
+        app:layout_constraintStart_toEndOf="@id/constitutionScore"
+        app:layout_constraintTop_toTopOf="@id/constitutionScore" />
+
+    <!--    Intelligence-->
+    <TextView
+        android:id="@+id/intelligenceScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@id/strengthLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/intelligenceModifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/strengthLabel"
+        app:layout_constraintTop_toBottomOf="@id/intelligenceScore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/intelligence"
+        app:layout_constraintBottom_toBottomOf="@id/intelligenceModifier"
+        app:layout_constraintStart_toEndOf="@id/intelligenceScore"
+        app:layout_constraintTop_toTopOf="@id/intelligenceScore" />
+
+    <!--    Wisdom-->
+    <TextView
+        android:id="@+id/wisdomScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/strengthLabel"
+        android:text="1"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/intelligenceModifier" />
+
+    <TextView
+        android:id="@+id/wisdomModifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/strengthLabel"
+        android:text="1"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/wisdomScore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/wisdom"
+        app:layout_constraintBottom_toBottomOf="@id/wisdomModifier"
+        app:layout_constraintStart_toEndOf="@id/wisdomScore"
+        app:layout_constraintTop_toTopOf="@id/wisdomScore" />
+
+    <!--    Charisma-->
+    <TextView
+        android:id="@+id/charismaScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/strengthLabel"
+        android:text="1"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/wisdomModifier" />
+
+    <TextView
+        android:id="@+id/charismaModifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/strengthLabel"
+        android:text="1"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/charismaScore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/charisma"
+        app:layout_constraintBottom_toBottomOf="@id/charismaModifier"
+        app:layout_constraintStart_toEndOf="@id/charismaScore"
+        app:layout_constraintTop_toTopOf="@id/charismaScore" />
+
+    <Button
+        android:id="@+id/reroll"
+        android:layout_width="match_parent"
+        android:text="Reroll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
